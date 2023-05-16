@@ -1,5 +1,11 @@
+.DS_Store
+.gitignore
+
+
 # Text backup files
 *.bak
 
 # Database
 *.sqlite3
+
+
