@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>  
+<html lang="en">  
 <head>
     <title>RecipeApp | Logout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +8,15 @@
     <!-- CSS CUSTOM -->
     <link rel='stylesheet' type='text/css' href="{% static 'recipes/css/styles.css' %}">
     <style type="text/css">
-        body {
-            background: url("{% static 'recipes/images/home_background.jpg' %}") no-repeat fixed;
-            background-size: cover;
-        }
-
-        a {
-            margin-left: 10px;
-        }
+    body{
+        background: url("{% static 'recipes/images/home_background.jpg' %}")  no-repeat fixed;
+        background-size: cover;
+    }
+    a{
+        margin-left: 10px;
+    }
     </style>
-</head>
+</head> 
 
 <body>
     <div class="auth_modal" style="width: 25%;">
@@ -26,11 +24,10 @@
                    border-radius: 10px;
                    padding: 10px; 
                    background-color: rgb(161, 241, 161);
-                   color: rgb(14, 59, 14)">Successfully Logged Out!</h2>
+                   color: rgb(14, 59, 14)">Successfully Logged Out!</h2> 
         <br>
-        <a class="login_btn" href="{%url 'login' %}"> Login </a>
-        <a class="back-home_btn" href="{%url 'recipes:home' %}"> Home </a>
+        <a class="login_btn" href ="{%url 'login' %}"> Login </a>
+        <a class="back-home_btn" href ="{%url 'recipes:home' %}"> Home </a>
     </div>
 </body>
-
 </html>

@@ -8,10 +8,11 @@ from .forms import RecipesSearchForm
 class RecipeModelTest(TestCase):
 
     def setUpTestData():
+        # Set up non-modified objects used by all test methods
         Recipe.objects.create(name='Tea', cooking_time=5, ingredients='tea-leaves, water, sugar',
                               description='Add tea leaves to boiling water, then add sugar')
 
-    def test_desciption(self):
+    def test_small_desciption(self):
         recipe = Recipe.objects.get(id=1)
         name_max_length = recipe._meta.get_field('name').max_length
         self.assertEqual(name_max_length, 120)
